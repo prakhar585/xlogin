@@ -26,9 +26,9 @@ function App() {
       {incorrectCredentials && <p>Invalid username or password</p>}
       {!isLoggedIn ? (
         <form onSubmit={(e) => handleSubmit(e)}>
-          Username:<input type="text" label="Username" required onChange={(e)=>setUsername(e.target.value)}></input>
+          Username:<input type="text" label="Username" id="Username" required onChange={(e)=>setUsername(e.target.value)}></input>
           <br />
-          Password:<input type="password" label="Password" required onChange={(e)=>setPassword(e.target.value)}></input>
+          Password:<input type="password" label="Password" id="Password" required onChange={(e)=>setPassword(e.target.value)}></input>
           <br />
           <button type="submit">Submit</button>
         </form>
