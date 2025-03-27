@@ -26,14 +26,16 @@ function App() {
       {incorrectCredentials && <p>Invalid username or password</p>}
       {!isLoggedIn ? (
         <form onSubmit={(e) => handleSubmit(e)}>
-          Username:<input type="text" label="Username" id="Username" required onChange={(e)=>setUsername(e.target.value)}></input>
+          <label htmlFor="Username">Username</label>
+          <input type="text" label="Username" id="Username" required onChange={(e)=>setUsername(e.target.value)}></input>
           <br />
+          <label htmlFor="Password">Password</label>
           Password:<input type="password" label="Password" id="Password" required onChange={(e)=>setPassword(e.target.value)}></input>
           <br />
           <button type="submit">Submit</button>
         </form>
       ) : (
-        <h3>Welcome User</h3>
+        <h3>Welcome, User</h3>
       )}
     </div>
   );
