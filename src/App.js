@@ -35,7 +35,7 @@ function App() {
           <button type="submit">Submit</button>
         </form>
       ) : (
-        <h3>Welcome, User</h3>
+        <h3>Welcome, user</h3>
       )}
     </div>
   );
